@@ -9,20 +9,20 @@ except ImportError:
 logicle_extension = Extension(
     'flowutils.logicle_c',
     sources=[
-        'flowutils/logicle_c_ext/_logicle.c',
-        'flowutils/logicle_c_ext/logicle.c'
+        'flowutilspd/logicle_c_ext/_logicle.c',
+        'flowutilspd/logicle_c_ext/logicle.c'
     ],
-    include_dirs=[get_include(), 'flowutils/logicle_c_ext'],
+    include_dirs=[get_include(), 'flowutilspd/logicle_c_ext'],
     extra_compile_args=['-std=c99']
 )
 
 setup(
-    name='FlowUtils',
-    version='0.7.1',
-    packages=['flowutils'],
+    name='FlowUtilsPandas',
+    version='0.1.0',
+    packages=['flowutilspd'],
     package_data={'': []},
     description='Flow Cytometry Standard Utilities',
     license='BSD',
     ext_modules=[logicle_extension],
-    install_requires=['numpy>=1.7']
+    install_requires=['numpy>=1.7', 'pandas>=0.2']
 )
