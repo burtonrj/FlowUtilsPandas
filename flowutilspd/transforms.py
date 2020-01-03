@@ -4,7 +4,7 @@ Various transforms for FCS data
 
 import numpy as np
 
-from flowutils import logicle_c
+from flowutilspd import logicle_c
 
 
 def quantile(x, n):
