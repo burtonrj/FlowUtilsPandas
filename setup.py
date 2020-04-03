@@ -7,7 +7,7 @@ except ImportError:
 
 
 logicle_extension = Extension(
-    'flowutils.logicle_c',
+    'flowutilspd.logicle_c',
     sources=[
         'flowutilspd/logicle_c_ext/_logicle.c',
         'flowutilspd/logicle_c_ext/logicle.c'
